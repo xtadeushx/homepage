@@ -37,6 +37,7 @@ body {
 .header {
     position: sticky;
     padding: 10px 20px;
+    width: 80%;
 }
 
 .navigation__list {
@@ -55,6 +56,16 @@ body {
     transition: 0.3s;
     cursor: pointer;
 }
+
+.navigation__link:hover {
+    text-decoration-color: var(--text-decoration-color);
+    text-decoration-line: underline;
+}
+
+.navigation__link:active {
+    color: var(--text-decoration-color);
+}
+
 
 
 
