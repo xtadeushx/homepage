@@ -158,6 +158,11 @@ body {
     fill: var(--icon-color);
 }
 
+.contact-info__item:hover .contact-info__item-icon path {
+    fill: var(--text-decoration-color);
+    transition: all 0.3s ease-in-out;
+}
+
 .contact-info__item-icon {
     height: 1.1428rem;
     vertical-align: text-bottom;
@@ -403,4 +408,19 @@ body {
     column-gap: 70px;
     justify-items: center;
     list-style-type: none;
+}
+
+
+.contacts-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts-copyright a {
+    margin-right: 20px;
+}
+
+.contacts-copyright a:hover svg {
+    fill: tomato;
 }
