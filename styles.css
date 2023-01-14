@@ -18,6 +18,8 @@ body {
     --icon-color: #6A737D;
     --border-color: #FF9A0045;
     --text-decoration-color: #FF9A00;
+    --resume-border-color: #F5F5F5;
+    ;
 }
 
 .container {
@@ -71,8 +73,8 @@ body {
 
 .resume {
     margin: 50px auto;
-    border: 1px solid #F5F5F5;
-    box-shadow: 1px 1px 7px 7px #F5F5F5;
+    border: 1px solid var(--resume-border-color);
+    box-shadow: 1px 1px 7px 7px var(--resume-border-color);
     padding: 30px 0;
     max-width: 900px;
 }
