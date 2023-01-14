@@ -87,6 +87,7 @@ body {
     border-bottom: 3px solid var(--border-color);
     padding-bottom: 30px;
     margin-bottom: 15px;
+    margin-top: 50px;
 }
 
 @media screen and (max-width: 576px) {
@@ -106,6 +107,15 @@ body {
 
     .experiences {
         margin-right: 0;
+    }
+
+    .contacts-copyright {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        display: none;
     }
 }
 
@@ -280,11 +290,13 @@ body {
 }
 
 .experiences__company-header-name {
+    display: inline-block;
     color: var(--primary-text-color);
     text-decoration-color: var(--text-decoration-color);
     text-decoration-line: underline;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+    margin-top: 10px;
 
 }
 
