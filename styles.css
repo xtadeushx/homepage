@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
@@ -15,6 +19,8 @@ body {
     --border-color: #ff9a0045;
     --text-decoration-color: #ff9a00;
 }
+
+
 
 .container {
     margin: 0 auto;
@@ -166,6 +172,22 @@ body {
     border-color: var(--text-decoration-color);
 }
 
+.contact-info__avatar:hover {
+    animation-name: flip_animation;
+    animation-duration: 3s !important;
+    cursor: pointer;
+}
+
+@keyframes flip_animation {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
 .intro {
     display: flex;
     justify-content: start;
@@ -258,6 +280,7 @@ body {
     text-decoration-line: underline;
     text-align: left;
     margin-bottom: 20px;
+
 }
 
 .experiences__company-project {
@@ -272,16 +295,36 @@ body {
     font-size: 15px;
 }
 
+
+
+
+
 .experiences__company-project-name {
     color: var(--primary-text-color);
     text-align: left;
     margin-bottom: 10px;
+
 }
 
 .experiences__company-project-responsibilities {
     color: var(--secondary-text-color);
     padding-left: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ff9a00;
+
 }
+
+
+.experiences__company-project-item {
+    list-style: decimal;
+}
+
+.experiences__company-project-item a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--secondary-text-color);
+}
+
 
 .additional-info {
     flex: 1 1 40%;
